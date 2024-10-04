@@ -3,8 +3,8 @@ import csv
 import re
 
 # Path to your PDF file
-pdf_path = '/home/wntrb0y/Desktop/PNC_Statements_2024/Statement_Apr_12_2024.pdf'
-csv_path = '/home/wntrb0y/Desktop/PNC Statement Parser/APR_transactions.csv'
+pdf_path = 'PDF_PATH'
+csv_path = 'CSV_PATH'
 
 # Function to extract transactions
 def extract_transactions(text):
