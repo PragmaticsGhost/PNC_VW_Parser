@@ -56,7 +56,7 @@ def extract_transactions(text):
                 date, amount, description = match.groups()
                 # Clean up the amount to ensure it only contains digits and decimal point
                 amount = amount.replace(',', '').strip()
-                transaction = {date, amount, description}
+                transaction = [date, amount, description]
                 append_transaction_by_section(current_section, transaction, transactions_by_section)
             else:
                 # Check if the line starts with a date
@@ -67,7 +67,7 @@ def extract_transactions(text):
                         date = parts[0] + " " + parts[1]  # Combining potential date components
                         amount = parts[2] if len(parts) > 2 else ''
                         description = ' '.join(parts[3:]) if len(parts) > 3 else ''
-                        transaction = {date, amount, description}
+                        transaction = [date, amount, description]
                         append_transaction_by_section(current_section, transaction, transactions_by_section)
     return transactions_by_section
 
