@@ -25,12 +25,6 @@ This Python script extracts and parses transaction data from PNC Virtual Wallet 
    cd PNC_VW_Parser
    ```
 
-3. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## Usage
 
 1. Make sure your PNC Virtual Wallet statements are in PDF format.
