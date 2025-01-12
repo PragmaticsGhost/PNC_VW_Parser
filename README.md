@@ -56,3 +56,7 @@ If you encounter any issues or have questions, feel free to open an issue on the
 ---
 
 Happy Parsing!
+
+___________________________________________
+
+ReadMe generated with GenAI....don't hate me
